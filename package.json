@@ -5,9 +5,21 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "browser-sync start -s app -f app --no-ui"
+    "dev": "browser-sync start -s app -f app --no-ui",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.css": [
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.js": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "browser-sync": "^3.0.2",
     "prettier": "^3.6.2",
     "stylelint": "^16.21.1",
