@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "browser-sync start -s app -f app --no-ui",
+    "dev": "vite serve --port 5000",
+    "build": "vite build",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -20,7 +21,7 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
-    "browser-sync": "^3.0.2",
+    "vite": "^6.3.5",
     "prettier": "^3.6.2",
     "stylelint": "^16.21.1",
     "stylelint-config-standard": "^38.0.0",
