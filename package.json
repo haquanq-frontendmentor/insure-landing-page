@@ -1,8 +1,9 @@
 {
-  "name": "fm-insure-landing-page",
+  "name": "insure-landing-page",
   "description": "Solution for frontendmentor.io challenge: insure-landing-page",
   "devDependencies": {
-    "browser-sync": "^3.0.2"
+    "browser-sync": "^3.0.2",
+    "prettier": "^3.6.2"
   },
   "scripts": {
     "dev": "browser-sync start -s app -f app --no-ui"
