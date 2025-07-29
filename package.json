@@ -1,14 +1,16 @@
 {
   "name": "insure-landing-page",
   "description": "Solution for frontendmentor.io challenge: insure-landing-page",
-  "devDependencies": {
-    "browser-sync": "^3.0.2",
-    "prettier": "^3.6.2"
-  },
+  "author": "haquanq",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "browser-sync start -s app -f app --no-ui"
   },
-  "type": "module",
-  "author": "haquanq",
-  "license": "MIT"
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0"
+  }
 }
