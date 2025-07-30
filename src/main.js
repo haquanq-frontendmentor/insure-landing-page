@@ -17,7 +17,11 @@ menuButton.addEventListener("click", () => {
     isMenuOpened() ? hideMenu() : showMenu();
 });
 
-window.addEventListener("resize", (e) => {
+window.addEventListener("resize", () => {
     const mediaQuery = window.matchMedia("(min-width: 48em)");
     if (mediaQuery.matches && isMenuOpened()) hideMenu();
+});
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && isMenuOpened()) hideMenu();
 });
