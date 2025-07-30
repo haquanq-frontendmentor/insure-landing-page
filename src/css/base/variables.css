@@ -1,0 +1,39 @@
+:root {
+    --color-violet-100: hsl(273, 4%, 51%);
+    --color-violet-500: hsl(256, 26%, 20%);
+    --color-violet-700: hsl(270, 9%, 17%);
+
+    --color-blueish-100: hsl(216, 30%, 68%);
+
+    --color-gray-100: hsl(0, 0%, 98%);
+    --color-gray-300: hsl(0, 0%, 85%);
+    --color-gray-500: hsl(273, 4%, 51%);
+
+    --color-white: hsl(0, 0%, 100%);
+
+    --font-main: "Karla", system-ui, sans-serif;
+    --font-heading: "DM Serif Display", system-ui, sans-serif;
+
+    --font-normal: 400;
+    --font-bold: 700;
+
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem; /* 20 */
+    --text-2xl: 1.75rem; /* 28 */
+    --text-3xl: clamp(2.5rem, 1.5458rem + 4.0712vw, 3.5rem); /* 40 - 56 */
+    --text-4xl: clamp(3rem, 1.5687rem + 6.1069vw, 4.5rem); /* 48 - 72 */
+
+    --leading-main: 1;
+    --leading-paragraph: 1.6;
+
+    --tracking-paragraph: 0.004em;
+    --tracking-heading: -0.015em;
+    --tracking-button: 0.07em;
+    --tracking-foot-link: 0.07em;
+    --tracking-nav-link: 0.07em;
+
+    --container-max-width: 69.375rem;
+    --container-padding-x: 1.5rem;
+}

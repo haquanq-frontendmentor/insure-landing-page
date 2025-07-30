@@ -1,0 +1,39 @@
+.btn {
+    padding: 0.6875rem 1.6875rem 0.6875rem 1.5625rem;
+    color: var(--button-foreground, black);
+    border: 2px solid var(--button-border, black);
+    background-color: var(--button-surface, transparent);
+    transition-property: color, background-color, border-color;
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+
+    @media (hover: hover) {
+        &:hover {
+            border-color: var(--button-border-hover, gray);
+            color: var(--button-foreground-hover, gray);
+            background-color: var(--button-surface-hover, transparent);
+        }
+    }
+
+    &--icon {
+        padding: 0;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    &--light {
+        --button-foreground: var(--color-gray-100);
+        --button-foreground-hover: var(--color-violet-500);
+        --button-border: var(--color-gray-100);
+        --button-border-hover: var(--color-gray-100);
+        --button-surface-hover: var(--color-gray-100);
+    }
+
+    &--dark {
+        --button-foreground: var(--color-violet-700);
+        --button-foreground-hover: var(--color-gray-100);
+        --button-border: var(--color-violet-500);
+        --button-border-hover: var(--color-violet-500);
+        --button-surface-hover: var(--color-violet-500);
+    }
+}

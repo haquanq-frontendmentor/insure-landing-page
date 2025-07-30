@@ -1,0 +1,22 @@
+@import "./base/fonts.css";
+@import "./base/variables.css";
+@import "./base/reset.css";
+@import "./base/breakpoints.css";
+
+@import "./components/button.css";
+
+@import "./components/navigation.css";
+@import "./components/header.css";
+@import "./components/intro.css";
+@import "./components/find-out.css";
+@import "./components/about.css";
+@import "./components/footer.css";
+@import "./components/footer-navigation.css";
+@import "./components/footer-socials.css";
+
+.main {
+    &__container {
+        margin-inline: auto;
+        width: min(100vw - calc(var(--container-padding-x) * 2), var(--container-max-width));
+    }
+}

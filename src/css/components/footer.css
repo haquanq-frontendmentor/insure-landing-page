@@ -1,0 +1,19 @@
+.footer {
+    position: relative;
+    background-color: var(--color-gray-100);
+
+    &__container {
+        position: relative;
+        z-index: 100;
+        margin: 0 auto;
+        width: min(100vw - calc(var(--container-padding-x) * 2), var(--container-max-width));
+    }
+
+    &__bg-pattern {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+}

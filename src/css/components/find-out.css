@@ -1,0 +1,48 @@
+.find-out {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-violet-500);
+    padding: 4.5rem 2rem 4.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.625rem 4rem;
+
+    &__bg-pattern-wrapper {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    &__title {
+        position: relative;
+        font-size: var(--text-3xl);
+        color: var(--color-gray-100);
+        z-index: 100;
+    }
+
+    &__cta-btn {
+        position: relative;
+        z-index: 100;
+        padding-right: 1.375rem;
+        padding-left: 1.375rem;
+    }
+
+    &__bg-pattern {
+        height: 100%;
+    }
+
+    @media (--laptop) {
+        flex-direction: row;
+        padding: 4.375rem 5rem 4.25rem 5.0625rem;
+
+        &__title {
+            max-width: 17ch;
+            text-align: start;
+        }
+    }
+}

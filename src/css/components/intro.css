@@ -1,0 +1,121 @@
+.intro {
+    position: relative;
+    color: var(--color-gray-100);
+    background-color: var(--color-violet-500);
+
+    &__container {
+        position: relative;
+        margin-inline: auto;
+        max-width: var(--container-max-width);
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        position: relative;
+        text-align: center;
+        padding: 5.8125rem 1.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+
+    &__title {
+        position: relative;
+        font-size: var(--text-4xl);
+        margin-block-end: 1rem;
+        max-width: 14ch;
+        z-index: 100;
+    }
+
+    &__description {
+        position: relative;
+        max-width: 54ch;
+        z-index: 100;
+        margin-block-end: 2.125rem;
+    }
+
+    &__left-pattern,
+    &__right-pattern {
+        pointer-events: none;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__left-pattern.mobile {
+        left: 0;
+        top: 0;
+    }
+
+    &__left-pattern.desktop {
+        display: none;
+        left: 0;
+        bottom: -20.875rem;
+    }
+
+    &__right-pattern.mobile {
+        right: 0;
+        bottom: -11rem;
+    }
+
+    &__right-pattern.desktop {
+        display: none;
+        top: -80px;
+        right: 0;
+    }
+
+    @media (--laptop) {
+        padding: 6.5625rem 0 7.875rem;
+
+        &__container {
+            width: calc(100vw - calc(var(--container-padding-x) * 2));
+        }
+
+        &__picture {
+            position: absolute;
+            right: 0;
+            max-width: 33.75rem;
+        }
+
+        &__picture img {
+            max-height: none;
+        }
+
+        &__content {
+            text-align: start;
+            padding: 0 34.5rem 0 0;
+            align-items: start;
+        }
+
+        &__line {
+            width: 9.375rem;
+            height: 1px;
+            background-color: var(--color-gray-100);
+            display: block;
+            margin-bottom: 3.9375rem;
+        }
+
+        &__title {
+            line-height: 0.89;
+            margin: 0 0 1.75rem;
+        }
+
+        &__description {
+            margin: 0 0 2rem;
+        }
+
+        &__left-pattern.mobile,
+        &__right-pattern.mobile {
+            display: none;
+        }
+
+        &__left-pattern.desktop,
+        &__right-pattern.desktop {
+            display: block;
+        }
+    }
+}
