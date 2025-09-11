@@ -6,21 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite serve --port 5000",
-    "build": "vite build",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.css": [
-      "prettier --write",
-      "stylelint --fix"
-    ],
-    "*.js": [
-      "prettier --write"
-    ]
+    "lint:css": "stylelint ./src/css/**/*.css",
+    "build": "vite build"
   },
   "devDependencies": {
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.2",
     "vite": "^6.3.5",
     "stylelint": "^16.21.1",
     "stylelint-config-standard": "^38.0.0",
