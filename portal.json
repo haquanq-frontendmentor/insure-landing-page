@@ -2,7 +2,7 @@
   "name": "Insure Landing Page",
   "featured": false,
   "colors:": {
-    "brand": "##2c2a2e"
+    "brand": "#2c2a2e"
   },
   "images": {
     "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/insure-landing-page/main/docs/preview.jpg"
